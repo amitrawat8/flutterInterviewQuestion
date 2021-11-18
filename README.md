@@ -1,15 +1,15 @@
-### Flutter Interview Question
+# Flutter Interview Question
 
 
 
-# Difference Between Flexible and Expanded 
+### Difference Between Flexible and Expanded 
 
 1. Widget under Flexible are by default WRAP_CONTENT although you can change it using parameter fit.
 
 2. Widget under Expanded is MATCH_PARENT you can change it using flex.
 
 
-# LifeCycle of StatefulWidget
+### LifeCycle of StatefulWidget
 
    1. createState(): When the Framework is instructed to build a StatefulWidget, it immediately calls createState()
 
