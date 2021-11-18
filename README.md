@@ -31,7 +31,7 @@ Flutter Interview Question
 
  10.  mounted is false: The state object can never remount, and error will be thrown if setState is called.
 
-            ```dart
+```dart
                       import 'package:flutter/material.dart';
 
       class ScreenLifecyle extends StatefulWidget {
@@ -150,7 +150,7 @@ Flutter Interview Question
           }
 
     }
-                  ```
+```
 
 
 
