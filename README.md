@@ -10,6 +10,18 @@
 
 
 ### LifeCycle of StatefulWidget
+The lifecycle has the following simplified steps:
+
+    createState()
+    mounted == true
+    initState()
+    didChangeDependencies()
+    build()
+    didUpdateWidget()
+    setState()
+    deactivate()
+    dispose()
+    mounted == false
 
    1. createState(): When the Framework is instructed to build a StatefulWidget, it immediately calls createState()
 
