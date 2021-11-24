@@ -1,6 +1,56 @@
 # Flutter Interview Question
 
+### Difference between Container and row/column
+```dart
+Container
 
+This is the most used widget in every flutter app. It is mostly used to style its child widgets. It takes only one child. Some flutter widgets, focus only on their core functionality and does not contain much styling options. The container widget comes to the rescue and provides you with various common painting, positioning, and sizing widgets.
+
+Container(
+   child: Widget  //Another flutter widget
+)
+
+Row/Column
+
+These are widgets that can contain multiple child widgets. The row is the widget that can display various child widgets in a horizontal manner. The column displays child widgets in a vertical manner. By default, these widgets don’t support scrolling. It can be enabled by wrapping with other widgets. But, if there are numerous child widgets, it is preferred to use ListView.
+
+Row(
+  children: [
+    Container(), // First Widget
+    Text(),      // Second Widget
+    ----,
+    ----,    // Multiple Widgets
+  ])
+Column(
+  children: [
+    Container(), // First Widget
+    Text(),      // Second Widget
+    ----,
+    ----,    // Multiple Widgets
+  ])
+
+COMPARISON
+
+|-------------------------------|------------------------------------|
+|      CONTAINER                |    COLUMN/ROW                      |
+|-------------------------------|------------------------------------|
+|*Takes exactly one child widget| *Takes multiple (unlimited)        |
+|                               |  child widgets.                    |
+|                               |                                    |
+|*Rich alignment and styling    | *Alignment options available, but  |
+| options are available         |  there are no styling options.     | 
+|                               |                                    |
+|                               |                                    |
+|                               |                                    |
+|*Flexible width                |*Always takes full available        |
+|  (e.g. child width,           |  height (column) /width (row)      |
+|     available width, …)       |                                    |
+|                               |                                    |
+|                               |                                    |
+|*Perfect for custom styling    |*Must-use if widgets sit next       |
+|    and alignment              | to/above each other                |
+|-------------------------------|------------------------------------|
+```
 
 ### Difference Between Flexible and Expanded 
 
